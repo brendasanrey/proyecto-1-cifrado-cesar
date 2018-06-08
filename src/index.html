@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <h1>Caesar Cipher</h1>
+    <hr>
+    <div>
+      <span>Texto a cifrar </span><input type="text" id="text" required>
+    </div>
+    <div>
+      <span>Número de desplazamientos </span><input type="number" id="number" required>
+    </div>
+    <button onclick="start(true)">Cifrar</button>
+    <button onclick="start(false)">Decifrar</button>
+    <p>Resultado: <span id="text-result"></span></p>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
