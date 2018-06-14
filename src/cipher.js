@@ -14,12 +14,12 @@ window.cipher = {
 				const codeAscii = string.charCodeAt(i); 
 				//Para MINUSCULAS, codigo ASCII entre 65 y 90
 				if(codeAscii > 90){
-					position = codeAscii - 97 + offset;
+					position = codeAscii - 97 + (offset % 26);
 					//Formula para obtener el codigo ASCII de la letra CIFRADA
 					codeCipher = (position % 26) + 97; 
 				//Para MAYUSCULAS, codigo ASCII entre 97 y 122
 				}else{
-					const position = codeAscii - 65 + offset;
+					const position = codeAscii - 65 + (offset % 26);
 					codeCipher = (position % 26) + 65; 
 				}
 				 //Obtener la letra que corresponde con el codigo ASCII, caracter ya cifrado
@@ -40,7 +40,7 @@ window.cipher = {
 				const codeAscii = string.charCodeAt(i);
 				if(codeAscii > 90){
 					//Calcula la posicion de la letra dentro del alfabeto
-					const position = codeAscii - 97 - offset;
+					const position = codeAscii - 97 - (offset % 26);
 					//Si la posicion es menor de cero (negativo) 
 					if(position < 0){
 						//Obtiene el codigo ASCII de la letra ya cifrada.
@@ -49,7 +49,7 @@ window.cipher = {
 						codeCipher = (position % 26) + 97;
 					}
 				}else{
-					const position = codeAscii - 65 - offset;
+					const position = codeAscii - 65 - (offset % 26);
 					if(position < 0){
 						codeCipher = (position % 26) + 91;
 					}else{

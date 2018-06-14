@@ -1,6 +1,6 @@
 const start = (chooseFunction) => {
  	//Numero de posiciones a recorrer
- 	const offset = parseInt(document.getElementById('number').value) % 26;
+ 	const offset = parseInt(document.getElementById('number').value);
 	//Condicional para ver que funcion ejecutar dependiendo del boton, true = encripta, false = desencripta.
  	if(chooseFunction){
  		//Obtener el texto ingresado para cifrar
