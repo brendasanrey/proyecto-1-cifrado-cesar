@@ -1,0 +1,23 @@
+1. Codificación encode y decode
+	1.1 Aplicar funcion de modulo en la formula.
+	1.2 Limitar al programa para reconocer solo mayusculas y minusculas
+	1.3 Implementar espaciado en el input para cifrar
+	1.4 Verificar funcionalidad de charCodeAt con console.log
+	1.5 Verificar funcionalidad de fromCharCode con console.log
+	1.6 Imprimir resultado con .innerHTML
+2. Refactorización
+	2.1 Adaptar código a especificaciones ES6 (let y const, string templates, arrow function)
+	2.2 Dividir código siguiendo la estructura del boilerplate.
+	2.3 Aplicar el objeto window.cipher con las funciones de encode y decode
+3. Proceso de diseño
+	3.1 Identificar las necesidades del usuario.
+	3.2 Elaborar un prototipo del diseño de interfaz.
+	3.3 Codificar la interaz (estilos e interacción).
+	3.4 Testear con usuarios.
+	3.5 Mejorar interfaz y diseño a partir de los resultados del test.
+4. Testeo
+5. Debuging
+6. Publicación de producto final
+	6.1 Modificar archivo README con las indicaciones recibidads.
+	6.2 Subir código a GitHub
+	6.3 Publicar producto con GitHub Pages.

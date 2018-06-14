@@ -12,12 +12,12 @@ window.cipher = {
 			}else{
 				//Obtener el codigo ASCII de la letra
 				const codeAscii = string.charCodeAt(i); 
-				//Para MINUSCULA, codigo ASCII entre 65 y 90
+				//Para MINUSCULAS, codigo ASCII entre 65 y 90
 				if(codeAscii > 90){
 					position = codeAscii - 97 + offset;
 					//Formula para obtener el codigo ASCII de la letra CIFRADA
 					codeCipher = (position % 26) + 97; 
-				//Para MAYUSCULA, codigo ASCII entre 97 y 122
+				//Para MAYUSCULAS, codigo ASCII entre 97 y 122
 				}else{
 					const position = codeAscii - 65 + offset;
 					codeCipher = (position % 26) + 65; 
@@ -25,7 +25,7 @@ window.cipher = {
 				 //Obtener la letra que corresponde con el codigo ASCII, caracter ya cifrado
 				const letterCipher = String.fromCharCode(codeCipher);
 				//Agregar la letra cifrada al resultado
-				textResult += letterCipher;
+				textResult += letterCipher;                                           
 			}
 		}
 		return textResult;
