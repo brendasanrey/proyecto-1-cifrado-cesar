@@ -3,26 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>CipherParty</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="cover">
-      <h1>Cipher<span>Party</span></h1>
-      <p>Organiza la mejor fiesta sorpresa: cifra tus mensajes, comparte tu llave secreta y no dejes que nadie más se entere.</p>
-      <div>
-          <input type="text" id="text" class="input input-text" placeholder="Mensaje a cifrar">
-      </div>
-      <div>
-         <input type="number" class="input" id="number" placeholder="Llave" required>         
-      </div>  
-      <div>
-         <button class="button button-color inside" onclick="start(true)">Cifrar</button>
-          <button onclick="start(false)">Decifrar</button>
-      </div>
-      <div>
-        <input type="text" id="text-result" placeholder="Mensaje a decifrar"></input>
+    <div class="container-fluid h-100">
+      <div class="row h-100 justify-content-center no-gutters">
+        <div class="col-md-8 col-sm-12 align-self-center">
+          <div class="cover">
+            <h1>Cipher<span>Party</span></h1>
+            <p>Organiza la mejor fiesta sorpresa: cifra tus mensajes, comparte tu llave secreta y no dejes que nadie más se entere.</p>
+            <div>
+                <input type="text" id="text" class="input input-text" placeholder="Mensaje a cifrar" title="Escribe el mensaje que deseas cifrar">
+            </div>
+            <div>
+               <input type="number" class="input" id="number" placeholder="Llave secreta" title="Debes ingresar un número entero mayor de uno">         
+            </div>  
+            <div>
+               <button class="button button-color inside" onclick="start(true)">Cifrar</button>
+                <button onclick="start(false)">Decifrar</button>
+            </div>
+            <div>
+              <input type="text" id="text-result" placeholder="Mensaje a decifrar" title="Escribe el mensaje que deseas decifrar"></input>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="cipher.js"></script>

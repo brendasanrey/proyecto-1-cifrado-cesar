@@ -5,10 +5,12 @@ body{
   color: #0a0a0b;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
+  overflow-x: hidden;
+  font-size: 1.3rem;
 }
 
 .cover{
-  padding: 100px 240px;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -27,7 +29,6 @@ h1 span {
 
 input {
   margin: 10px;
-  height: 50px;
   background: #ffd241;
   border: none;
   font-size: 10pt;
@@ -40,10 +41,12 @@ input {
 }
 
 input[type="text"]{
-  width: 600px;
+  width: 80%;
+  height: 60px;
 }
 input[type="number"]{
-  width: 300px;
+  width: 50%;
+  height: 50px;
 }
 
 input:hover{
