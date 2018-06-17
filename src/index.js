@@ -1,3 +1,4 @@
+
 const start = (chooseFunction) => {
  	//Numero de posiciones a recorrer
  	const offset = parseInt(document.getElementById('number').value);
@@ -7,14 +8,13 @@ const start = (chooseFunction) => {
  		const string = document.getElementById('text').value; 
  		//limpiar / borrar contenido de la etiqueta
 		document.getElementById('text').value = ''; 
- 		//Imprimir en pantalla el texto cifrado que retorna la funcion encode
+ 		//Imprimir en el input el texto cifrado que retorna la funcion encode
  		document.getElementById('text-result').value = cipher.encode(offset, string); 
  	}else{
  		const string = document.getElementById('text-result').value;
  		//limpiar / borrar contenido de la etiqueta
 		document.getElementById('text-result').value = ''; 
- 		//Imprimir en pantalla el texto decifrado que retorna la funcion decode
+ 		//Imprimir en el input el texto decifrado que retorna la funcion decode
  		document.getElementById('text').value = cipher.decode(offset, string);
  	}
 }
-

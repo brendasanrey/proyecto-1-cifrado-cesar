@@ -61,5 +61,8 @@ window.cipher = {
 			}
 		}
 		return textResult;
+	},
+	
+	createCipherWithOffset:(offset, string) => {
 	}
 };
