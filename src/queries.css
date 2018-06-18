@@ -1,0 +1,12 @@
+@media (max-width: 575.98px) {
+	body{
+		font-size: 1em;
+	}
+	.cover{
+		margin-top: 50px;
+	}
+
+	h1{
+		font-size: 2.5em;
+	}
+}
