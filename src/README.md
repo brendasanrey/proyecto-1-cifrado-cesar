@@ -36,4 +36,4 @@ Los elementos están organizados de tal manera que el uso siga un flujo descende
 
 Para la función de `descifrado` el flujo inicia a partir del último campo donde se ingresa el texto y la traducción a su original se muestra en el primer campo.
 
-![Interfaz Cipher Party](img/captura.jpg)
+![Interfaz Cipher Party](img/capturaFinal.jpg)
